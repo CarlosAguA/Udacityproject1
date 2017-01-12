@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Udacity project 1</string>
+    <string name="address">Teniente Alemán 400 Esq. Bernal Díaz Del Castillo, Morelia, México</string>
+    <string name="address_tag">Address:</string>
+    <string name="contact">01 443 314 6133</string>
+    <string name="contact_tag">Contact:</string>
+    <string name="hours_tag">Opening:</string>
+    <string name="menu_tag">Menu:</string>
+    <string name="hours">Mo. to Fri. , 18:00 to 1:00 </string>
+    <string name="description_tag">Description:</string>
+    <string name="descrip">Cilantro brings to you the best tacos: beef and pastor to your table with the Food Truck style.</string>
+
+
+
+</resources>

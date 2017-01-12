@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="carlosdeveloper.com.udacityproject1.MainActivity">
+
+    <!-- Logo Layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/im_view1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/cilantro" />
+
+    </RelativeLayout>
+
+    <!-- Info Layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/my_custom_background">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ScrollView01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation = "horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+
+                <!-- Opening-->
+                <TextView
+                    android:id="@+id/hours_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hours_tag"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/blueAqua"
+                    android:textStyle="bold" />
+
+                <!-- Contact-->
+                <TextView
+                    android:id="@+id/contact_tag_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_tag"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="5dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/blueAqua"
+                    android:textStyle="bold" />
+
+                <!-- Address-->
+                <TextView
+                    android:id="@+id/address_tag_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address_tag"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="5dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/blueAqua"
+                    android:textStyle="bold" />
+
+                <!-- Description-->
+                <TextView
+                    android:id="@+id/desc_tag_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description_tag"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="20dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/blueAqua"
+                    android:textStyle="bold" />
+
+                <!-- Description-->
+                <TextView
+                    android:id="@+id/menu_tag_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_tag"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="60dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/blueAqua"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".MainActivity"
+                android:layout_weight="2">
+
+                <!-- Opening-->
+                <TextView
+                    android:id="@+id/opening_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hours"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="21dp"
+                    android:paddingRight="30dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold" />
+                <!-- Contact-->
+                <TextView
+                    android:id="@+id/contact_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="30dp"
+                    android:paddingTop="10dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold" />
+                <!-- Address-->
+                <TextView
+                    android:id="@+id/address_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="5dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold" />
+
+                <!-- Description-->
+                <TextView
+                    android:id="@+id/description_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/descrip"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="5dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="10dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation = "horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                tools:context=".MainActivity">
+
+                                <TextView
+                                    android:id="@+id/tacos_text_view"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tacos"
+                                    android:textAppearance="?android:textAppearanceSmall"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/bisteck_text_view"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bisteck"
+                                    android:textAppearance="?android:textAppearanceSmall"
+                                    android:textColor="@color/orange"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/chorizo_text_view"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Chorizo"
+                                    android:textAppearance="?android:textAppearanceSmall"
+                                    android:textColor="@color/orange"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/pastor_text_view"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pastor"
+                                    android:textAppearance="?android:textAppearanceSmall"
+                                    android:textColor="@color/orange"
+                                    android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                tools:context=".MainActivity">
+
+                                <TextView
+                                    android:id="@+id/Drinks_text_view"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Drinks"
+                                    android:textAppearance="?android:textAppearanceSmall"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/horchata_text_view"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Horchata"
+                                    android:textAppearance="?android:textAppearanceSmall"
+                                    android:textColor="@color/orange"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/jamaica_text_view"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Jamaica"
+                                    android:textAppearance="?android:textAppearanceSmall"
+                                    android:textColor="@color/orange"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/beer_text_view"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Beer"
+                                    android:textAppearance="?android:textAppearanceSmall"
+                                    android:textColor="@color/orange"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            </LinearLayout>
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <!-- Product Layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/im_view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/tacos" />
+
+    </RelativeLayout>
+
+</LinearLayout>
